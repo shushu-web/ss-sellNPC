@@ -1,22 +1,19 @@
-Config = {}
-
 Config.NPCs = {
     {
-        name = "shopkeeper1",
-        model = "mp_m_shopkeep_01",
-        coords = vector4(24.49, -1347.3, 29.5, 270.0),
-        buyItems = {
-            { item = "gold_watch", price = 100 },
-            { item = "diamond", price = 500 }
-        }
+    coords = vector3(100.0, 100.0, 100.0), -- NPC の座標
+    model = "ig_clay", -- NPC のモデル
+    items = { -- 販売アイテム
+    { name = "item1", price = 100 },
+    { name = "item2", price = 200 },
+    { name = "item3", price = 300 }
+    }
     },
     {
-        name = "shopkeeper2",
-        model = "a_m_m_farmer_01",
-        coords = vector4(-47.42, -1758.67, 29.42, 47.0),
-        buyItems = {
-            { item = "silver_ring", price = 50 },
-            { item = "gold_bar", price = 1000 }
-        }
+    coords = vector3(200.0, 200.0, 200.0), -- 別の NPC の座標
+    model = "ig_lamar", -- 別の NPC のモデル
+    items = { -- 販売アイテム
+    { name = "item4", price = 400 },
+    { name = "item5", price = 500 }
     }
-}
+    }
+    }

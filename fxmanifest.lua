@@ -7,13 +7,12 @@ version '1.1.0' --スクリプトのバージョン
 
 -- サーバースクリプト
 server_scripts {
-    'server/server.lua',
-    'shared/shared.lua',  --server.luaでshard.luaを使用したいため記載
+    'server.lua',
 }
 
 -- クライアントスクリプト
 client_scripts {
-    'client/client.lua',
+    'client.lua',
 }
 --ここまでは基本的なスクリプトの構成
 
@@ -21,14 +20,4 @@ client_scripts {
 -- QBCoreと依存関係があることを宣言
 dependencies {
     'qb-core',
-}
-
--- NUIファイル
-ui_page 'html/index.html'
-
--- 必要なファイル
-files {
-    'html/index.html',
-    'html/script.js',
-    'html/sounds/*.ogg',
 }
